@@ -63,3 +63,13 @@ git clone https://github.com/CiscoTestAutomation/CLUS18-DevNet-2595.git devnet-2
 ```
 
 and now you should be ready to get going!
+
+
+## Repository Content
+
+```text
+    testbeds/                         testbed YAML files to be used during Cisco Live
+    testbeds/backup/                  backup testbeds in case primary had issues
+    configs/                          configurations applied to both CSR1000v devices
+    scripts/                          example scripts to be worked on during the workshop
+```

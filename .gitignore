@@ -99,3 +99,12 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# robot framework generated files
+output.xml
+log.html
+report.html
+
+# genie artefacts
+pts
+pts_json
