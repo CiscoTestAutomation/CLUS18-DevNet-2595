@@ -1,0 +1,102 @@
+# testbed block
+# -------------
+#   information common to the whole testbed
+testbed:
+
+  # this testbed's name
+  name: CLUS18-PROD-2
+
+  # TACACS information common to the testbed.
+  tacacs:
+    login_prompt: "login:"
+    password_prompt: "Password:"
+    username: "cisco"
+
+  # password information common to this testbed
+  passwords:
+    tacacs: cisco
+    enable: cisco
+    line: cisco
+
+# devices block
+# -------------
+#   per-device information description
+devices:
+
+  # hostname
+  # (this is the first host)
+  csr1000v-1:
+
+    # alias (also can be referred to as)
+    alias: uut
+
+    # os/platform information
+    type: router
+    os: iosxe
+    platform: csr1000v
+    
+    # connection block
+    # (defines how we can connect to this device)
+    connections:
+      a:
+        protocol: telnet
+        ip: 172.25.1.193
+        port: 3547
+
+    # custom block
+    # (any additional information)
+    custom:
+
+      # this is used by genie.abstraction
+      abstraction:
+        order: [os, platform]
+
+  # hostname
+  # (this is the 2nd host)
+  # (same structure as above)
+  csr1000v-2:
+
+    alias: helper
+
+    type: router
+    os: iosxe
+    platform: csr1000v
+
+    connections:
+      a:
+        protocol: telnet
+        ip: 172.25.1.193
+        port: 3549
+
+    custom:
+      abstraction:
+        order: [os, platform]
+
+# topology block
+# --------------
+#   defines the per-device interfaces and interconnects
+topology:
+
+  csr1000v-1:
+    # the interfaces on this device
+    interfaces:
+
+      # interface name
+      GigabitEthernet1:
+        type: ethernet
+
+        # the link name this interface is connected to
+        link: link-1
+
+      GigabitEthernet2:
+        type: ethernet
+        link: link-2
+
+  csr1000v-2:
+    interfaces:
+      GigabitEthernet1: 
+        type: ethernet
+        link: link-1
+      GigabitEthernet2:
+        type: ethernet
+        link: link-2
