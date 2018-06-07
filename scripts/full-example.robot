@@ -6,7 +6,7 @@
 #
 #   make sure to always pass a testbed to this file when you run it.
 #
-#   bash$ TESTBED=../testbeds/CLUS18-PROD-1.yaml full-example.robot
+#   bash$ TESTBED=../testbeds/CLUS18-PROD-1.yaml robot full-example.robot
 
 *** Settings ***
 Library        ats.robot.pyATSRobot
