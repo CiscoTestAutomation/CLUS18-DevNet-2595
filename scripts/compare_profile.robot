@@ -14,7 +14,7 @@ Library        unicon.robot.UniconRobot
 
 *** Test Cases ***
 Initialize
-    # intiialize testbed by loading it through Genie
+    # initialize testbed by loading it through Genie
     use genie testbed "%{TESTBED}"
 
 Connect to devices

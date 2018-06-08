@@ -28,3 +28,4 @@ Connect to devices
 Collect Show Tech
     ${output}=  execute "show tech" on device "%{DEVICE}"
     create file  %{OUTFILE}  ${output}
+
