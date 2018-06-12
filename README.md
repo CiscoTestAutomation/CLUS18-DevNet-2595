@@ -29,10 +29,13 @@ DevNet-2595: Stateful Network Validation using pyATS+Genie and Robot Framework.
 
 #### Step 1. Create a Python virtual environment
 
+In a new shell window:
+
 ```bash
-# create a workspace directory
-mkdir ~/workspace
+# create a development directory
 cd ~/workspace
+mkdir ~/devnet-2595
+cd devnet-2595
 
 # create python virtual environment
 python3 -m venv .
@@ -58,8 +61,8 @@ pip install genie genie.libs.robot
 #### Step 3. Clone this repository
 
 ```bash
-# clone this repo into devnet-2595 folder
-git clone https://github.com/CiscoTestAutomation/CLUS18-DevNet-2595.git devnet-2595
+# clone this repo into "repo" folder
+git clone https://github.com/CiscoTestAutomation/CLUS18-DevNet-2595.git repo
 ```
 
 and now you should be ready to get going!
