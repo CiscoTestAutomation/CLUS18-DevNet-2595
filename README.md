@@ -1,5 +1,7 @@
 # Cisco Live US 2018: DevNet-2595 Workshop Material
 
+**This workshop is deprecated - [Visit our latest workshop](https://github.com/CiscoTestAutomation/CLEUR19-DevNet-2595)**
+
 This repository contains the files required for the participants of [Cisco Live US 2018](https://www.ciscolive.com/us/)
 workshop:
 
